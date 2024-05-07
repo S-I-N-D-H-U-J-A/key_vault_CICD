@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ActiveDebugProfile>Docker</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\sindh\Downloads\Asp.net Core 6 MVC Connect to MS SQL Database EF Core Using C#  Asp.Net Core EF Database First\DBFirstapp\DBFirstapp\Properties\PublishProfiles\DBFirstapp20240428222036.pubxml</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+</Project>

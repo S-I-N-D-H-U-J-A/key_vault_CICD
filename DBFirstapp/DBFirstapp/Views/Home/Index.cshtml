@@ -1,0 +1,54 @@
+﻿
+@model List<DBFirstapp.Controllers.HomeController.ViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<p>Listed Employee count: @Model.Count()</p>
+
+@{
+string html = "<h5>";
+    foreach (var item in Model)
+    {
+    html += item.EmpoyeeName;
+    }
+    html += "</h5>";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].EmpoyeeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].LoginId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Count(); i++)
+        {
+            <tr>
+                <td>
+                    <input type="text" asp-for="@Model[i].Id" />
+                </td>
+                <td>
+                    <input type="text" asp-for="@Model[i].EmpoyeeName" />
+                </td>
+                <td>
+                    <input type="text" asp-for="@Model[i].LoginId" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
